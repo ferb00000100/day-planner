@@ -1,0 +1,22 @@
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+}
+
+
+.time-container {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.time-box {
+    height:60px;
+    width:60px;
+}
+
+.border {
+
+    border: 2px solid black;
+}

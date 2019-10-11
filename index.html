@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html"
+      xmlns="http://www.w3.org/1999/html">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -9,68 +10,75 @@
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+
 	<link rel="stylesheet" href="assets/css/style.css" type="text/css">
 
 </head>
 <body>
 
-<!--	Jumbotron for the header -->
-	<div class="jumbotron jumbotron-fluid">
-		<div class="d-flex justify-content-center">
+<!--calendar container-->
+<div class="time-container time-box-responsive">
+	<!--	Jumbotron for the header -->
+	<div class="jumbotron  shadow rounded m-3 jumbotron-fluid header-background">
+		<div class="d-flex flex-wrap justify-content-center">
 			<h1>Work Day</h1>
 		</div>
 		<div class="d-flex justify-content-center">
-			date and time here
+			<h6 id="date-display"></h6>
 		</div>
 	</div>
-<!--calendar container-->
-<div class="time-container">
-	<div class="d-flex flex-wrap">
+	<div class="center-text">
+		<h6>Click the calendar icon to add a new event</h6>
+		<h6>Double click the calendar icon to remove the event</h6>
+	</div>
+	<div class="d-flex">
 		<div class="p-2 time-box border">9am</div>
-		<input class="border flex-fill">
-		<button type="button"><img src="assets/images/icons8-event-26.png"></button>
+		<input  name="1" data-name="9am" id="1" type="text" placeholder="add event"
+		        class=" text-light border p-2 flex-fill">
+		<button name="1" type="button"><img src="assets/images/icons8-event-26.png"></button>
 	</div>
-	<div class="d-flex flex-wrap">
+	<div class="d-flex">
 		<div class="p-2 time-box border">10am</div>
-		<input class="border flex-fill">
-		<button type="button"><img src="assets/images/icons8-event-26.png"></button>
+		<input id="2" type="text"  placeholder="add event" class="border p-2 flex-fill">
+		<button name="2" type="button"><img src="assets/images/icons8-event-26.png"></button>
 	</div>
-	<div class="d-flex flex-wrap">
+	<div class="d-flex">
 		<div class="p-2 time-box border">11am</div>
-		<input class="border flex-fill">
-		<button type="button"><img src="assets/images/icons8-event-26.png"></button>
+		<input id="3" type="text" placeholder="add event" class="border p-2 flex-fill">
+		<button name="3" type="button"><img src="assets/images/icons8-event-26.png"></button>
 	</div>
 	<div class="d-flex flex-wrap">
 		<div class="p-2 time-box border">12pm</div>
-		<input class="border flex-fill">
-		<button type="button"><img src="assets/images/icons8-event-26.png"></button>
+		<input id="4" type="text" placeholder="add event" class="border p-2 flex-fill">
+		<button name="4" type="button"><img src="assets/images/icons8-event-26.png"></button>
 	</div>
 	<div class="d-flex flex-wrap">
 		<div class="p-2 time-box border">1pm</div>
-		<input class="border flex-fill">
-		<button type="button"><img src="assets/images/icons8-event-26.png"></button>
+		<input id="5" type="text" placeholder="add event" class="border p-2 flex-fill">
+		<button name="5" type="button"><img src="assets/images/icons8-event-26.png"></button>
 	</div>
 	<div class="d-flex flex-wrap">
 		<div class="p-2 time-box border">2pm</div>
-		<input class="border flex-fill">
-		<button type="button"><img src="assets/images/icons8-event-26.png"></button>
+		<input id="6" type="text" placeholder="add event" class="border p-2 flex-fill">
+		<button name="6" type="button"><img src="assets/images/icons8-event-26.png"></button>
 	</div>
 	<div class="d-flex flex-wrap">
 		<div class="p-2 time-box border">3pm</div>
-		<input class="border flex-fill">
-		<button type="button"><img src="assets/images/icons8-event-26.png"></button>
+		<input id="7" type="text" placeholder="add event" class="border p-2 flex-fill">
+		<button name="7" type="button"><img src="assets/images/icons8-event-26.png"></button>
 	</div>
 	<div class="d-flex flex-wrap">
 		<div class="p-2 time-box border">4pm</div>
-		<input class="border flex-fill">
-		<button type="button"><img src="assets/images/icons8-event-26.png"></button>
+		<input id="8" type="text" placeholder="add event" class="border p-2 flex-fill">
+		<button name="8" type="button"><img src="assets/images/icons8-event-26.png"></button>
 	</div>
 	<div class="d-flex flex-wrap">
 		<div class="p-2 time-box border">5pm</div>
-		<input class="border flex-fill">
-		<button type="button"><img src="assets/images/icons8-event-26.png"></button>
+		<input id="9" type="text" placeholder="add event" class="border p-2 flex-fill">
+		<button name="9" type="button"><img src="assets/images/icons8-event-26.png"></button>
 	</div>
-
 </div>
 
 
